@@ -1,0 +1,193 @@
+<html>
+<head>
+<title>Calculator Using Java</title>
+<link href='https://fonts.googleapis.com/css?family=Bitter:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+<style>
+body
+{
+background:url('http://eskipaper.com/images/math-wallpaper-8.jpg');
+}
+h1
+{
+color:white;
+text-align:center;
+font-family: 'Bitter', serif;
+}
+#calcy
+{
+background-color:grey;
+height:450px;
+width:400px;
+margin:auto 475px;
+border-radius:40px;
+box-shadow:0px 0px 10px 5px black;
+}
+.numpad
+{
+width:75px;
+height:75px;
+color:black;
+background-color:#F6F5F4;
+border-radius:25px;
+font-size:50px;
+color:085068;
+}
+#screen
+{
+width:400px;
+height:75px;
+border-top-left-radius:30px;
+border-top-right-radius:30px;
+background-color:a8c699;
+}
+#plus
+{
+margin-top:10px;
+height:75px;
+width:150px;
+border-radius:25px;
+}
+#minus
+{
+margin-top:10px;
+height:75px;
+width:150px;
+border-radius:25px;
+}
+#divide
+{
+
+height:100px;
+width:75px;
+border-radius:25px;
+}
+#multi
+{
+
+height:100px;
+width:75px;
+border-radius:25px;
+}
+#mod
+{
+height:100px;
+width:75px;
+border-radius:25px;
+}
+#clear
+{
+height:100px;
+width:75px;
+border-radius:25px;
+}
+</style>
+<script>
+function run1()
+{
+document.form.result.value+="1";
+}
+function run2()
+{
+document.form.result.value+="2";
+}
+function run3()
+{
+document.form.result.value+="3";
+}
+function run4()
+{
+document.form.result.value+="4";
+}
+function run5()
+{
+document.form.result.value+="5";
+}
+function run6()
+{
+document.form.result.value+="6";
+}
+function run7()
+{
+document.form.result.value+="7";
+}
+function run8()
+{
+document.form.result.value+="8";
+}
+function run9()
+{
+document.form.result.value+="9";
+}
+function run0()
+{
+document.form.result.value+="0";
+}
+function rundeci()
+{
+document.form.result.value+=".";
+}
+function runplus()
+{
+document.form.result.value+="+";
+}
+function runminus()
+{
+document.form.result.value+="-";
+}
+function rundivide()
+{
+document.form.result.value+="/";
+}
+function runmulti()
+{
+document.form.result.value+="*";
+}
+function runmod()
+{
+document.form.result.value+="%";
+}
+function runresult()
+{
+var finalResult = eval(document.form.result.value);
+document.form.result.value = finalResult;
+}
+function runclear()
+{
+document.form.result.value = "";
+}
+</script>
+</head>
+<body>
+      <h1>Abhijith Naagarjuna's Calculator</h1>
+      <div id="calcy">
+	       <form name="form">
+                 <input name="result" style="font-size:50px" id="screen"></input>
+                 <br>
+                 <input type="button" name="1" value="1" onclick="run1()" class="numpad">
+                 <input type="button" name="2" value="2" onclick="run2()" class="numpad">
+                 <input type="button" name="3" value="3" onclick="run3()" class="numpad">
+				 <input type="button" name="mod" value="%" onclick="runmod()" class="numpad" id="mod">
+			     
+				 <input type="button" name="clear" value="C" onclick="runclear()" class="numpad" id="clear">
+                 <br>
+                 <input type="button" name="4" value="4" onclick="run4()" class="numpad">
+                 <input type="button" name="5" value="5" onclick="run5()" class="numpad">
+                 <input type="button" name="6" value="6" onclick="run6()" class="numpad">
+				 <input type="button" name="divide" value="/" onclick="rundivide()" class="numpad" id="divide">
+				 <input type="button" name="multi" value="*" onclick="runmulti()" class="numpad" id="multi">
+                 <br>
+                 <input type="button" name="7" value="7" onclick="run7()" class="numpad">
+                 <input type="button" name="8" value="8" onclick="run8()" class="numpad">
+				 <input type="button" name="9" value="9" onclick="run9()" class="numpad">
+				 <input type="button" name="minus" value="-" onclick="runminus()" class="numpad" id="minus">
+				 
+				 <br>
+				 <input type="button" name="0" value="0" onclick="run0()" class="numpad">
+				 <input type="button" name="deci" value="." onclick="rundeci()" class="numpad">
+				 <input type="button" name="equal" value="=" onclick="runresult()" class="numpad">
+				 <input type="button" name="plus" value="+" onclick="runplus()"  class="numpad" id="plus">
+				 				 
+	       </form>
+	  </div>
+</body>
+</html>
